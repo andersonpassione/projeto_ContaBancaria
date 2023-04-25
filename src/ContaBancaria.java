@@ -11,25 +11,26 @@ public class ContaBancaria {
 
         //inicializar dados do cliente
         System.out.println("*********************************************");
-        System.out.println("Dados iniciais do cliente");
-        System.out.println();
+        System.out.println("\nDados iniciais do cliente");
         System.out.println("Nome:             " + nome);
         System.out.println("Tipo de conta:    " + tipoConta);
         System.out.println("Saldo inicial:    R$" + saldoConta);
-        System.out.println("*********************************************");
-        System.out.println();
+        System.out.println("\n*********************************************");
+
+        String menu = """
+                Menu de Operações:
+                
+                1 - Consultar saldos
+                2 - Depositar valor
+                3 - Transferir valor
+                4 - Sair
+                
+                Digite uma opção:
+                """;
 
         while (numeroMenuOpcoes != 4) {
-
             //Menu opções
-            System.out.println("Operações");
-            System.out.println();
-            System.out.println("1 - Consultar saldos");
-            System.out.println("2 - Depositar valor");
-            System.out.println("3 - Transferir valor");
-            System.out.println("4 - Sair");
-            System.out.println();
-            System.out.println("Digite a opção desejada:");
+            System.out.println(menu);
             numeroMenuOpcoes = scanner.nextInt();
 
             //Adicionando interação com o Menu
